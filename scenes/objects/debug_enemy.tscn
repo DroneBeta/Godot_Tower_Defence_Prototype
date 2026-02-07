@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dnqedk8l6u3p3"]
+
+[ext_resource type="Texture2D" uid="uid://ke5rilgttuyg" path="res://assets/Debug_Tile-e61e.png" id="1_cjshv"]
+[ext_resource type="Script" uid="uid://bpyjdtenmixfs" path="res://scripts/units/debug_enemy.gd" id="1_ibtof"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2u3x6"]
+size = Vector2(16, 16)
+
+[node name="DebugEnemy" type="Area2D" unique_id=2115858341 groups=["enemies"]]
+script = ExtResource("1_ibtof")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1532301122]
+texture = ExtResource("1_cjshv")
+hframes = 4
+vframes = 4
+frame = 13
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705157764]
+shape = SubResource("RectangleShape2D_2u3x6")

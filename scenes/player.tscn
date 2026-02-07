@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://831tpbs7kme1"]
+
+[ext_resource type="Script" uid="uid://c8auqp4nybvq3" path="res://scripts/player/player.gd" id="1_qhqgy"]
+[ext_resource type="Script" uid="uid://bpc4jf8v7b6n8" path="res://scripts/player/camera.gd" id="1_umi3y"]
+[ext_resource type="Script" uid="uid://j418l7kpdqu" path="res://scripts/player/building_ui.gd" id="2_6u3ho"]
+
+[node name="Player" type="Node2D" unique_id=1042991477]
+script = ExtResource("1_qhqgy")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1122353749]
+script = ExtResource("1_umi3y")
+
+[node name="Building UI" type="Control" parent="." unique_id=955978415]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_6u3ho")
+
+[connection signal="start_build" from="." to="Building UI" method="_on_player_start_build"]

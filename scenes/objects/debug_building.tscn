@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bx8s710clni15"]
+
+[ext_resource type="Script" uid="uid://cgku4oy025prh" path="res://scripts/towers/debug_building.gd" id="1_pu1oa"]
+[ext_resource type="Texture2D" uid="uid://ke5rilgttuyg" path="res://assets/Debug_Tile-e61e.png" id="2_pu1oa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pu1oa"]
+
+[node name="DebugBuilding" type="Area2D" unique_id=190745453]
+scale = Vector2(3, 3)
+script = ExtResource("1_pu1oa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1438409962]
+texture = ExtResource("2_pu1oa")
+hframes = 4
+vframes = 4
+frame = 8
+
+[node name="DetectEnemie" type="CollisionShape2D" parent="." unique_id=1683031991]
+scale = Vector2(10, 10)
+shape = SubResource("CircleShape2D_pu1oa")
+
+[node name="ClosestCheck" type="RayCast2D" parent="." unique_id=1664659062]
+scale = Vector2(1.0000001, 1.0000001)
+enabled = false
+target_position = Vector2(0, 100)
