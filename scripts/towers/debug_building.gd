@@ -16,3 +16,7 @@ func enemie_in_range(body: Area2D) -> void:
 
 func enemie_out_of_range(body: Area2D) -> void:
 	pass
+	
+	
+	
+# MAKE THIS A FEATURE. SO TWO AREA 2D, ONE FOR TARGETTING AND ONE FOR DATA + HITBOX
