@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://f8bdbms7rjqp"]
+
+[ext_resource type="Texture2D" uid="uid://cw20l282gh1w4" path="res://assets/Bullets_Tower-9592.png" id="1_ugh5m"]
+[ext_resource type="Script" uid="uid://bfghaxsph43lw" path="res://scripts/projectile/arrow.gd" id="2_iyfe7"]
+
+[node name="Arrow" type="Sprite2D" unique_id=60251413]
+texture = ExtResource("1_ugh5m")
+hframes = 2
+vframes = 2
+script = ExtResource("2_iyfe7")
+
+[node name="Effects" type="CPUParticles2D" parent="." unique_id=1660928322]
+emitting = false
+local_coords = true
+direction = Vector2(-1, 0)
+gravity = Vector2(0, 0)

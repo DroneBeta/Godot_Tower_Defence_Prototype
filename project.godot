@@ -29,8 +29,11 @@ BuildMode={
 
 [layer_names]
 
-2d_physics/layer_1="UnitCollisions"
-2d_physics/layer_2="BuildingCollisions"
+2d_physics/layer_1="units"
+2d_physics/layer_2="buildings"
+2d_physics/layer_5="onLand"
+2d_physics/layer_6="inAir"
+2d_physics/layer_7="Layer 7"
 
 [rendering]
 

@@ -661,10 +661,7 @@ tile_set = SubResource("TileSet_jvpwo")
 position = Vector2(320, 232)
 
 [node name="DebugEnemy" parent="Objects" unique_id=1100756992 groups=["enemy"] instance=ExtResource("6_o6xl0")]
-position = Vector2(560, 280)
-
-[node name="DebugEnemy2" parent="Objects" unique_id=664658954 groups=["enemy"] instance=ExtResource("6_o6xl0")]
-position = Vector2(488, 416)
+position = Vector2(464, 232)
 
 [node name="Player" parent="." unique_id=1757402942 instance=ExtResource("2_rel0i")]
 position = Vector2(344, 272)
