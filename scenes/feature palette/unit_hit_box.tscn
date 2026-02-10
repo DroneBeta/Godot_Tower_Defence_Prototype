@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dnqedk8l6u3p3"]
+
+[ext_resource type="Script" uid="uid://bpyjdtenmixfs" path="res://scripts/feature palette/unit_hit_box.gd" id="1_ibtof"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fyj23"]
+radius = 8.0
+
+[node name="UnitHitBox" type="Area2D" unique_id=2115858341]
+script = ExtResource("1_ibtof")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705157764]
+shape = SubResource("CircleShape2D_fyj23")

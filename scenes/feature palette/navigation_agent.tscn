@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ci1xr7llv3182"]
+
+[ext_resource type="Script" uid="uid://bv1ne6d8mdefp" path="res://scripts/feature palette/navigation_agent_2d.gd" id="1_ul5eu"]
+
+[node name="NavigationAgent" type="NavigationAgent2D" unique_id=529793047]
+debug_enabled = true
+script = ExtResource("1_ul5eu")

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dhqusjuaprluk"]
+
+[ext_resource type="Script" uid="uid://cgku4oy025prh" path="res://scripts/feature palette/targetting_range.gd" id="1_ef5un"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e1wpu"]
+radius = 256.0
+
+[node name="TargettingRange" type="Area2D" unique_id=783302535]
+script = ExtResource("1_ef5un")
+
+[node name="RangeShape" type="CollisionShape2D" parent="." unique_id=269935124]
+shape = SubResource("CircleShape2D_e1wpu")
