@@ -6,7 +6,7 @@ func _ready() -> void:
 	data.name = "Debug Tower"
 	data.dmg = Vector2i(5, 20)
 	data.attackType = Vector3(1, 0, 0)
-	data.rangeRadius = 20
+	data.rangeRadius = 30
 	data.attackSpeed = 1.0
 	
 	get_child(0).scale = data.widthHeight

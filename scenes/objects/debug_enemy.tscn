@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ke5rilgttuyg" path="res://assets/Debug_Tile-e61e.png" id="1_cjshv"]
 [ext_resource type="Script" uid="uid://c1nwsi681ot4v" path="res://scripts/units/debug_enemy.gd" id="1_ibtof"]
 [ext_resource type="PackedScene" uid="uid://dnqedk8l6u3p3" path="res://scenes/feature palette/unit_hit_box.tscn" id="2_ibtof"]
+[ext_resource type="PackedScene" uid="uid://ci1xr7llv3182" path="res://scenes/feature palette/navigation_agent.tscn" id="4_2ta8k"]
 
 [node name="DebugEnemy" type="Node2D" unique_id=1100756992]
 script = ExtResource("1_ibtof")
@@ -14,3 +15,5 @@ vframes = 4
 frame = 13
 
 [node name="UnitHitBox" parent="." unique_id=2115858341 instance=ExtResource("2_ibtof")]
+
+[node name="NavigationAgent" parent="." unique_id=529793047 instance=ExtResource("4_2ta8k")]

@@ -43,8 +43,7 @@ func shoot_enemy() -> void:
 	if start_shooting:
 		shoot_timer.start()
 		var p_instance = PROJECTILE.instantiate()
-		get_tree().root.add_child(p_instance) # NEED HELP
-		p_shot.connect(p_instance)
+		add_child(p_instance)
 		p_shot.emit(global_position, find_closest_enemy())
 
 func shoot_timeout() -> void:
