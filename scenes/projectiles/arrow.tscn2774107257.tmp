@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://f8bdbms7rjqp"]
+
+[ext_resource type="Script" uid="uid://bfghaxsph43lw" path="res://scripts/projectile/arrow.gd" id="2_iyfe7"]
+
+[sub_resource type="Gradient" id="Gradient_ugh5m"]
+offsets = PackedFloat32Array(0.003215434, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ugh5m"]
+radius = 1.0
+
+[node name="Arrow" type="Area2D" unique_id=2121099128]
+scale = Vector2(2, 2)
+script = ExtResource("2_iyfe7")
+
+[node name="Effects" type="CPUParticles2D" parent="." unique_id=1660928322]
+emitting = false
+amount = 20
+lifetime = 0.51
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+color_ramp = SubResource("Gradient_ugh5m")
+hue_variation_max = 1.0
+
+[node name="HitBox" type="CollisionShape2D" parent="." unique_id=546299627]
+shape = SubResource("CircleShape2D_ugh5m")

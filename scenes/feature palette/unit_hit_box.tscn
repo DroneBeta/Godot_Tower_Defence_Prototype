@@ -6,6 +6,7 @@
 radius = 8.0
 
 [node name="UnitHitBox" type="Area2D" unique_id=2115858341]
+collision_mask = 3
 script = ExtResource("1_ibtof")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705157764]

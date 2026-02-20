@@ -6,6 +6,7 @@
 radius = 256.0
 
 [node name="TargettingRange" type="Area2D" unique_id=783302535]
+collision_layer = 0
 script = ExtResource("1_ef5un")
 
 [node name="RangeShape" type="CollisionShape2D" parent="." unique_id=269935124]
